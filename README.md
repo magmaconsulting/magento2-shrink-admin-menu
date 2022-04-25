@@ -1,7 +1,7 @@
 # Magento 2 Shrink Admin Menu
 
-According to magento 2 guidelines third party extensions sholdn't add an amdin menu.
-This module compacts magento 2 third party menus by hiding their icons. 
+According to magento 2 guidelines third party extensions shouldn't add an amdin menu.
+This utility module compacts magento 2 third party menus by hiding their icons. 
 
 ## Installing
 
