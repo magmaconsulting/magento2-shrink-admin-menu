@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="magma" sortOrder="999" translate="label">
+            <label>Magma</label>
+        </tab>
+        <section id="magma_shrinkadminmenu" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="200"
+                 translate="label">
+            <label>Shrink Admin Menu</label>
+            <tab>magma</tab>
+            <resource>Magma_FarmaAcquisition::config_magma_shrinkadminmenu</resource>
+            <group id="general" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label">
+                <label>General</label>
+                <comment>
+                    <![CDATA[
+                    This module shrinks non magento admin menu items.
+]]>
+                </comment>
+                <field id="enabled" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label"
+                       type="select">
+                    <label>Enabled</label>
+                    <comment>Enable module</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+
+
+        </section>
+    </system>
+</config>

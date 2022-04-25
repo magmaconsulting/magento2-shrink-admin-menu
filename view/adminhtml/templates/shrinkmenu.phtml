@@ -1,0 +1,18 @@
+<script type="text/javascript">
+    require(
+        ['jquery'],
+        function($) {
+            $(document).ready(function(){
+                $('#nav li:not([id^=menu-magento]) > a').addClass("alter-menu");
+
+                $('head').append(
+                    '<style>' +
+                    'nav .level-0>a.alter-menu:before {display:none !important;} ' +
+                    'nav .level-0>a.alter-menu {min-height:auto !important; padding-top: 0.5rem;} ' +
+                    'nav .level-0>a.alter-menu span {font-size: inherit !important;} ' +
+                    '</style>'
+                    );
+
+            });
+        });
+</script>
